@@ -1,0 +1,22 @@
+/* Use flexbox to arrange the form elements horizontally */
+.form-container {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between items */
+  }
+  
+  /* Style individual form controls (adjust as needed) */
+  .form-group {
+    flex: 1; /* Distribute available space equally */
+    margin-right: 10px; /* Add some spacing between input controls */
+    margin-top: 10px;
+  }
+  .parent-container{
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .btn{
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  
