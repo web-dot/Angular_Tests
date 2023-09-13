@@ -10,10 +10,17 @@
           </div>
           <div class="form-group">
             <label for="itemPrice">Price</label>
-            <input title="please enter item name" type="number" id="itemPrice" name="itemPrice" [(ngModel)]="item.itemAmount"/>
+            <input title="please enter item name" type="number" id="itemPrice" name="itemPrice" [(ngModel)]="item.itemAmount"
+            (ngModelChange)="calculateTotalAmount(iComp)"/>
           </div>
         <!-- </form> -->
       </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="total-amt">
+    <mat-card-content>
+      <label>Total Amount</label>
+      <h2>{{totalAmount}}</h2>
     </mat-card-content>
   </mat-card>
   <button type="submit" (click)="onSubmit()" class="btn btn-primary">Submit</button>
